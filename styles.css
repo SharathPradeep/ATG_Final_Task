@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400&display=swap");
+
+* {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+#main-section {
+  color: white;
+}
+
+#left-section {
+  height: 100vh;
+  position: relative;
+}
+
+#right-section {
+  height: 100vh;
+  position: relative;
+}
+
+#left-content {
+  position: relative;
+  left: 80px;
+}
+
+#right-content {
+  position: relative;
+}
+
+#svg-circle {
+  background-color: #3d5af1;
+  height: 350px;
+  width: 350px;
+  border: none;
+  border-radius: 500px;
+  position: absolute;
+  top: 50px;
+  left: 30%;
+  z-index: 1;
+}
+
+#svg-content {
+  position: absolute;
+  top: 11rem;
+  left: 20rem;
+  z-index: 2;
+  color: white;
+}
+#svg-content1 {
+  position: absolute;
+  top: 11rem;
+  left: 22rem;
+  z-index: 2;
+  color: white;
+}
+
+.color-left-green {
+  background-color: #2e7447;
+}
+
+#svg-title,
+h1 {
+  font-weight: 900 !important;
+  font-size: 50px !important;
+}
+.top {
+  z-index: 3;
+}
+p {
+  font-size: 17px !important;
+}
+
+.font-size1 {
+  font-size: 20px !important;
+}
+
+#svg {
+  position: absolute;
+  height: 350px;
+  top: 0;
+}
+
+#about {
+  position: absolute;
+  height: 350px;
+  width: 300px;
+  top: 450px;
+  color: white;
+}
+#about1 {
+  position: absolute;
+  height: 350px;
+  width: 300px;
+  top: 350px;
+  color: white;
+}
+
+#skip {
+  letter-spacing: 6px;
+  position: absolute;
+  top: 42rem;
+  left: 450px;
+  color: white;
+}
+
+#coming-soon {
+  position: absolute;
+  top: 40rem;
+  color: #bbbbbb;
+  animation: 1s coming-soon ease-in;
+}
+
+@keyframes coming-soon {
+  0% {
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}
+
+#img1 {
+  position: absolute;
+  right: 0;
+  top: -130px;
+}
+
+#img2 {
+  position: absolute;
+  left: 150px;
+  top: 450px;
+}
+
+#img {
+  height: 600px;
+  width: 350px;
+}
+
+#page1 {
+  overflow: hidden;
+  height: 100vh;
+  position: relative;
+}
+
+#page2 {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.page-3-svg-content {
+  position: absolute;
+  top: 9.5rem !important;
+  left: 22rem;
+  z-index: 2;
+  color: white;
+}
+
+.color1 {
+  background-color: #071a52;
+}
+.color-right-green {
+  background-color: #529f6d;
+}
+
+.furn-img {
+  background: url("./resources/furn-img.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.color2 {
+  background-color: #dfe0df;
+}
+
+.color3 {
+  background-color: #3d5af1;
+}
+
+.color4 {
+  background-color: #153e90;
+}
+.green-img-1 {
+  position: absolute;
+  top: 390px;
+  right: 60px;
+}
+.green-img-2 {
+  position: absolute;
+  top: 440px;
+  right: 200px;
+}
+
+.page-three-left-color {
+  background-color: #3e044d;
+  height: 100vh;
+  position: relative;
+}
+
+.page-three-right-color {
+  background-color: #a7abb6;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+#page-three-secondpic {
+  position: absolute;
+  right: 30px;
+  top: 50px;
+}
+
+#page3,
+#page4 {
+  overflow: hidden;
+}
+#page-three-firstpic {
+  position: absolute;
+  left: 120px;
+  top: 50px;
+}
+.page-three-leftpic {
+  position: absolute;
+  top: 24em;
+}
+.nasa-right {
+  margin-left: 50px;
+}
+
+#page7 {
+  overflow: hidden;
+}
+
+#page5 {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.color5 {
+  background-color: #00fff0;
+}
+
+.color6 {
+  background-color: #1f45fc;
+}
+
+.page5-img-1 {
+  width: 240px;
+  height: 450px;
+  position: absolute;
+  top: -120px;
+  left: 140px;
+}
+
+.page5-img-2 {
+  width: 240px;
+  height: 450px;
+  position: absolute;
+  top: -20px;
+  left: 380px;
+}
+
+.page5-img-3 {
+  width: 240px;
+  height: 450px;
+  position: absolute;
+  top: 160px;
+  left: 620px;
+}
+
+.page5-img-4 {
+  width: 240px;
+  height: 450px;
+  position: absolute;
+  top: 400px;
+  left: 140px;
+}
+#page2,
+#page3,
+#page4,
+#page5,
+#page5,
+#page6,
+#page7 {
+  display: none;
+}
+
+.active {
+  fill: rgb(0, 146, 255) !important;
+}
+.non-active {
+  fill: rgb(255, 255, 255);
+}
+.page5-img-5 {
+  width: 240px;
+  height: 450px;
+  position: absolute;
+  top: 500px;
+  left: 380px;
+}
+
+.page-six-left-color {
+  background-color: #1a2639;
+  height: 100vh;
+  position: relative;
+}
+
+.page-six-right-color {
+  background-color: #171717;
+  height: 100vh;
+  position: relative;
+}
+.color-right-blue {
+  background-color: #071a52;
+}
+.color-left-blue {
+  background-color: #00003f;
+}
+
+.blue-img-1 {
+  position: absolute;
+  top: 200px;
+  left: 200px;
+}
+.blue-img-2 {
+  position: absolute;
+  top: -100px;
+  right: 50px;
+  overflow: hidden;
+}
+
+#page6 {
+  position: relative;
+  overflow: hidden;
+}
+
+#page-six-firstpic {
+  position: absolute;
+  top: -30px;
+}
+#page-six-secondpic {
+  position: absolute;
+  right: 11em;
+  top: 5em;
+}
+#page-six-thirdpic {
+  position: absolute;
+  bottom: 0;
+  left: 150px;
+}
+#page-six-fourthpic {
+  position: absolute;
+  right: 70px;
+  top: -9.5em;
+}
+#page-six-fifthpic {
+  position: absolute;
+  right: -30px;
+  bottom: -80px;
+}
