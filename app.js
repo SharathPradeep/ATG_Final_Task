@@ -138,19 +138,17 @@ $(document).ready(function() {
   });
 });
 
-window.addEventListener('scroll',(e)=>{
-  e.preventDefault();
-  const scroll=window.scrollY;
 
-  if(scroll==0){
-    svgring.style.strokeDasharray="0,1000";
-    for (var j= 6; j>0; j--)
-    {
-        dotarray[j].firstElementChild.firstElementChild.style.fill='rgb(255,255,255)';
-        
-    }
-  }else if(scroll>600 && scroll<800){
-    for (var i= 0; i<=1; i++)
+function animation1(){
+  svgring.style.strokeDasharray="0,1000";
+  for (var j= 6; j>0; j--)
+  {
+      dotarray[j].firstElementChild.firstElementChild.style.fill='rgb(255,255,255)';
+      
+  }
+}
+function animation2(){
+  for (var i= 0; i<=1; i++)
     {
         dotarray[i].firstElementChild.firstElementChild.style.fill='rgb(0, 146, 255)';
         
@@ -161,9 +159,9 @@ window.addEventListener('scroll',(e)=>{
         
     }
     svgring.style.strokeDasharray="130,1000";
-  }
-  else if(scroll>1300 && scroll<1500){
-    svgring.style.strokeDasharray="280,1000";
+}
+function animation3(){
+  svgring.style.strokeDasharray="280,1000";
 
     for (var i= 0; i<=2; i++)
     {
@@ -176,9 +174,9 @@ window.addEventListener('scroll',(e)=>{
         dotarray[j].firstElementChild.firstElementChild.style.fill='rgb(255,255,255)';
         
     }
-
-  }else if(scroll>2000 && scroll<2250){
-    svgring.style.strokeDasharray="420,1000";
+}
+function animation4(){
+  svgring.style.strokeDasharray="420,1000";
     for (var i= 0; i<=3; i++)
     {
         
@@ -189,203 +187,9 @@ window.addEventListener('scroll',(e)=>{
         dotarray[j].firstElementChild.firstElementChild.style.fill='rgb(255,255,255)';
         
     }
-  }else if(scroll>2700 && scroll<3000){
-    
-  }
-})
-
-
-dot1.addEventListener("click", ()=>
-{   
-    
-
-    svgring.style.strokeDasharray="0,1000";
-
-    gsap.from(".h1", {
-        opacity: 0, 
-        y: 30, 
-        duration: 1,
-        ease: 'power3.out'
-      });
-      gsap.from(".run", {
-        opacity: 0, 
-        y: -30, 
-        duration: 1,
-        ease: 'power3.out'
-      });
-      gsap.from("#img1", {duration: 1, y:"-100%"})
-    gsap.from("#img2", {duration: 1, y:"100%"})
-    
-    
-    for (var j= 6; j>0; j--)
-    {
-        dotarray[j].firstElementChild.firstElementChild.style.fill='rgb(255,255,255)';
-        
-    }
-    
-})
-
-dot2.addEventListener("click", ()=>
-{   
-  
-
-  svgring.style.strokeDasharray="130,1000";
-
-
-  gsap.from(".h1", {
-    opacity: 0, 
-    y: 30, 
-    duration: 1,
-    ease: 'power3.out'
-  });
-  gsap.from(".run", {
-    opacity: 0, 
-    y: -30, 
-    duration: 1,
-    ease: 'power3.out'
-  });
-  gsap.from("#right-section", {duration:0.85, y: "100%"})
-    
-    for (var i= 0; i<=1; i++)
-    {
-        dotarray[i].firstElementChild.firstElementChild.style.fill='rgb(0, 146, 255)';
-        
-    }
-    for (var j= 6; j>1; j--)
-    {
-        dotarray[j].firstElementChild.firstElementChild.style.fill='rgb(255,255,255)';
-        
-    }
-
-    
-    
-})
-dot3.addEventListener("click", ()=>
-{   
-
-    svgring.style.strokeDasharray="280,1000";
-    
-
-  gsap.from(".h1", {
-    opacity: 0, 
-    y: 30, 
-    duration: 1,
-    ease: 'power3.out'
-  });
-  gsap.from(".run", {
-    opacity: 0, 
-    y: -30, 
-    duration: 1,
-    ease: 'power3.out'
-  });
-  gsap.from("#page-three-firstpic", {duration: 1, y:"100%"})
-        gsap.from("#page-three-secondpic", {duration: 1, y:"-100%"})
-    
-    for (var i= 0; i<=2; i++)
-    {
-        
-        dotarray[i].firstElementChild.firstElementChild.style.fill='rgb(0, 146, 255)';
-      
-    }
-    for (var j= 6; j>2; j--)
-    {
-        dotarray[j].firstElementChild.firstElementChild.style.fill='rgb(255,255,255)';
-        
-    }
-   
-})
-dot4.addEventListener("click", ()=>
-{   
-    
-
-    svgring.style.strokeDasharray="420,1000";
-
-    svg.style.backgroundColor=
-  
-
-    gsap.from(".h1", {
-        opacity: 0, 
-        y: 30, 
-        duration: 1,
-        ease: 'power3.out'
-      });
-      gsap.from(".run", {
-        opacity: 0, 
-        y: -30, 
-        duration: 1,
-        ease: 'power3.out'
-      });
-    gsap.from("#g-1", {
-        opacity: 0, 
-        y: 100, 
-        duration: 1
-      });
-    gsap.from("#g-2", {
-        opacity: 0, 
-        y: 100, 
-        duration: 1
-      });
- 
-    for (var i= 0; i<=3; i++)
-    {
-        
-        dotarray[i].firstElementChild.firstElementChild.style.fill='rgb(0, 146, 255)';
-    }
-    for (var j= 6; j>3; j--)
-    {
-        dotarray[j].firstElementChild.firstElementChild.style.fill='rgb(255,255,255)';
-        
-    }
-   
-})
-dot5.addEventListener("click", ()=>
-{   
-
-   
-
-    svgring.style.strokeDasharray="530,1000";
-    svgring.style.animation="dash 2s linear forwards"
-    
-    
-
-    gsap.from(".h1", {
-        opacity: 0, 
-        y: 30, 
-        duration: 1,
-        ease: 'power3.out'
-      });
-      gsap.from(".run", {
-        opacity: 0, 
-        y: -30, 
-        duration: 1,
-        ease: 'power3.out'
-      });
-    gsap.from("#b-1", {
-        opacity: 0, 
-        y: 100, 
-        duration: 0.5
-      });
-    gsap.from("#b-2", {
-        opacity: 0, 
-        y: 100, 
-        duration: 0.5
-      });
-    gsap.from("#b-3", {
-        opacity: 0, 
-        x: 100, 
-        duration: 0.5
-      });
-    gsap.from("#b-4", {
-        opacity: 0, 
-        y: 100, 
-        duration: 0.5
-      });
-    gsap.from("#b-5", {
-        opacity: 0, 
-        y: 100, 
-        duration: 0.5
-      });
-  
+}
+function animation5(){
+  svgring.style.strokeDasharray="530,1000";
     for (var i= 0; i<=4; i++)
     {
         
@@ -396,57 +200,9 @@ dot5.addEventListener("click", ()=>
         dotarray[j].firstElementChild.firstElementChild.style.fill='rgb(255,255,255)';
         
     }
-    
-})
-dot6.addEventListener("click", ()=>
-{   
-   
-
-    svgring.style.strokeDasharray="680,1000";
-    svgring.style.animation="dash 2s linear forwards"
-
-
-
-  gsap.from(".h1", {
-    opacity: 0, 
-    y: 30, 
-    duration: 1,
-    ease: 'power3.out'
-  });
-  gsap.from(".run", {
-    opacity: 0, 
-    y: -30, 
-    duration: 1,
-    ease: 'power3.out'
-  });
-  gsap.from("#page-six-firstpic", {
-    opacity: 0, 
-    x: -100, 
-    duration: 1
-  });
-  gsap.from("#page-six-secondpic", {
-    opacity: 0, 
-    y: -100, 
-    duration: 1
-  });
-  gsap.from("#page-six-thirdpic", {
-    opacity: 0, 
-    y: 100, 
-    duration: 1
-  });
-  gsap.from("#page-six-fourthpic", {
-    opacity: 0, 
-    y: 100,
- 
-    duration: 1
-  });
-  gsap.from("#page-six-fifthpic", {
-    opacity: 0, 
-    y: 100, 
-    x:100,
-    duration: 1
-  });
-
+}
+function animation6(){
+  svgring.style.strokeDasharray="680,1000";
     for (var i= 0; i<=5; i++)
     {
         
@@ -457,38 +213,9 @@ dot6.addEventListener("click", ()=>
         dotarray[j].firstElementChild.firstElementChild.style.fill='rgb(255,255,255)';
         
     }
-    
-})
-dot7.addEventListener("click", ()=>
-{   
-    
-
-    svgring.style.strokeDasharray="820,1000";
-    svgring.style.animationDuration='200';
-
-    gsap.from(".h1", {
-        opacity: 0, 
-        y: 30, 
-        duration: 1,
-        ease: 'power3.out'
-      });
-    gsap.from(".run", {
-        opacity: 0, 
-        y: -30, 
-        duration: 1,
-        ease: 'power3.out'
-      });
-    gsap.from("#o1", {
-        opacity: 0, 
-        y: -100, 
-        duration: 1
-      });
-    gsap.from("#o2", {
-        opacity: 0, 
-        y: 100, 
-        duration: 1
-      });
-
+}
+function animation7(){
+  svgring.style.strokeDasharray="820,1000";
     for (var i= 0; i<=6; i++)
     {
         
@@ -499,6 +226,58 @@ dot7.addEventListener("click", ()=>
         dotarray[j].firstElementChild.firstElementChild.style.fill='rgb(255,255,255)';
         
     }
-})
+}
+
+
+window.addEventListener('scroll',(e)=>{
+  e.preventDefault();
+  const scroll=window.scrollY;
+
+  if(scroll==0){
+    animation1();
+  }else if(scroll>600 && scroll<900){
+    animation2();
+  }else if(scroll>1300 && scroll<1600){
+    animation3();
+  }else if(scroll>2000 && scroll<2450){
+    animation4();
+  }else if(scroll>2700 && scroll<3100){
+    animation5();
+  }else if(scroll>3400 && scroll<3900){
+    animation6();
+  }else if(scroll>4200 && scroll<4700){
+    animation7();
+  }
+});
+
+
+dot1.addEventListener("click", ()=>
+{   
+  animation1();
+});
+dot2.addEventListener("click", ()=>
+{   
+  animation2();  
+});
+dot3.addEventListener("click", ()=>
+{   
+  animation3();
+});
+dot4.addEventListener("click", ()=>
+{   
+  animation4();
+});
+dot5.addEventListener("click", ()=>
+{   
+  animation5();
+});
+dot6.addEventListener("click", ()=>
+{   
+  animation6();
+});
+dot7.addEventListener("click", ()=>
+{   
+  animation7();
+});
 
 
