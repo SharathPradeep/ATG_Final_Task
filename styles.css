@@ -31,23 +31,54 @@
 }
 
 #svg-circle {
-  background-color: #3d5af1;
+  height: 350px;
+  width: 350px;
+  border: none;
+  border-radius: 500px;
+  position: fixed;
+  top: 60px;
+  left: 28.5%;
+  z-index: 3;
+}
+
+#svg-content {
   height: 350px;
   width: 350px;
   border: none;
   border-radius: 500px;
   position: absolute;
-  top: 50px;
-  left: 30%;
+  top: 60px;
+  left: 22rem;
+  color: white;
   z-index: 1;
 }
 
-#svg-content {
+.svg-content-color1 {
+  background-color: #3d5af1;
+}
+.svg-content-color2 {
+  background-color: #153e90;
+}
+.svg-content-color3 {
+  background-color: #3e044d;
+}
+.svg-content-color4 {
+  background-color: #2e7447;
+}
+.svg-content-color5 {
+  background-color: #1f45fc;
+}
+.svg-content-color6 {
+  background-color: #1a2639;
+}
+.svg-content-color7 {
+  background-color: #00003f;
+}
+
+.svg-inner-content {
+  margin-top: 7rem !important;
   position: absolute;
-  top: 11rem;
-  left: 20rem;
-  z-index: 2;
-  color: white;
+  left: -30px;
 }
 #svg-content1 {
   position: absolute;
@@ -75,6 +106,7 @@ p {
 
 .font-size1 {
   font-size: 20px !important;
+  z-index: 2;
 }
 
 #svg {
@@ -289,7 +321,7 @@ p {
 #page5,
 #page6,
 #page7 {
-  display: none;
+  display: block;
 }
 
 .active {
